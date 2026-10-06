@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .card {
+            border: 1px solid black;
+            height: 350px;
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .card>img {
+            height: 350px;
+            width: 300px;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .card:hover>img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwkRNLgzQ_o3nNWadVUf6_VeHBIYacF6RUpsPvLpzgww&s=10">
+        </div>
+        <div class="card">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFzKQE4e3pnypLL2wRk6UvW_8yDTuiThlZo7er8-srIw&s=10">
+        </div>
+        <div class="card">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZcT1xWNVBkxh7o-eRRvx4kYLq3_HRIF7Mpx7D0TnifA&s">
+        </div>
+        <div class="card">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0W2TCexHSv3xXjbj9U5gSJSRVVhv2mETr6xNjtlEgrw&s=10">
+        </div>
+    </div>
+</body>
+
+</html>
