@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: solid;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+  
+  
+    
+    
+
+}
+.logo > img{
+    width: 50px;
+    margin-right:0px ;
+    
+   
+
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+  
+    gap: 1rem;
+    
+    
+}
+.cards{
+    display: flex;
+    gap: 4rem;
+}
+.cards img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+/* When mouse comes over image */
+.cards img:hover {
+    transform: scale(1.1);
+}
