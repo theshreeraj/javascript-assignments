@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Product Cards</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    /* Counter */
+
+    .counter {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+
+    /* All cards container */
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+
+    /* Single card */
+
+    .product-card {
+      width: 350px;
+      border: 1px solid black;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+    }
+
+
+    /* Product image */
+
+    .product-card img {
+      width: 100%;
+      height: 350px;
+      display: block;
+      object-fit: contain;
+    }
+
+
+    /* Buttons container */
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 12px;
+    }
+
+
+    /* Buttons */
+
+    button {
+      width: 120px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(179, 255, 220);
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+
+    /* Button hover */
+
+    button:hover {
+      background-color: rgb(100, 230, 180);
+      transform: scale(1.2);
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- COUNTERS -->
+
+  <div class="counter">
+
+    <p>
+      Wishlist:
+      <span id="wishlist">0</span>
+    </p>
+
+    <p>
+      Cart:
+      <span id="cart">0</span>
+    </p>
+
+  </div>
+
+
+
+  <!-- PRODUCT CARDS -->
+
+  <div class="container">
+
+
+    <!-- CARD 1 -->
+
+    <div class="product-card">
+
+      <img
+        src="https://media.istockphoto.com/id/488160041/photo/mens-shirt.jpg?s=612x612&w=0&k=20&c=xVZjKAUJecIpYc_fKRz_EB8HuRmXCOOPOtZ-ST6eFvQ="
+        alt="Blue Shirt"
+      >
+
+      <div class="buttons">
+
+        <button onclick="wishlistCount()">
+          Add Wishlist
+        </button>
+
+        <button onclick="cartCount()">
+          Add Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- CARD 2 -->
+
+    <div class="product-card">
+
+      <img
+        src="https://media.istockphoto.com/id/488160041/photo/mens-shirt.jpg?s=612x612&w=0&k=20&c=xVZjKAUJecIpYc_fKRz_EB8HuRmXCOOPOtZ-ST6eFvQ="
+        alt="Blue Shirt"
+      >
+
+      <div class="buttons">
+
+        <button onclick="wishlistCount()">
+          Add Wishlist
+        </button>
+
+        <button onclick="cartCount()">
+          Add Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- CARD 3 -->
+
+    <div class="product-card">
+
+      <img
+        src="https://media.istockphoto.com/id/488160041/photo/mens-shirt.jpg?s=612x612&w=0&k=20&c=xVZjKAUJecIpYc_fKRz_EB8HuRmXCOOPOtZ-ST6eFvQ="
+        alt="Blue Shirt"
+      >
+
+      <div class="buttons">
+
+        <button onclick="wishlistCount()">
+          Add Wishlist
+        </button>
+
+        <button onclick="cartCount()">
+          Add Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- CARD 4 -->
+
+    <div class="product-card">
+
+      <img
+        src="https://media.istockphoto.com/id/488160041/photo/mens-shirt.jpg?s=612x612&w=0&k=20&c=xVZjKAUJecIpYc_fKRz_EB8HuRmXCOOPOtZ-ST6eFvQ="
+        alt="Blue Shirt"
+      >
+
+      <div class="buttons">
+
+        <button onclick="wishlistCount()">
+          Add Wishlist
+        </button>
+
+        <button onclick="cartCount()">
+          Add Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    let wishlist = 0;
+    let cart = 0;
+
+
+    function wishlistCount() {
+
+      wishlist++;
+
+      document.getElementById("wishlist").textContent = wishlist;
+
+    }
+
+
+    function cartCount() {
+
+      cart++;
+
+      document.getElementById("cart").textContent = cart;
+
+    }
+
+  </script>
+
+
+</body>
+</html>
