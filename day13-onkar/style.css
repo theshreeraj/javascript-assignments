@@ -1,0 +1,75 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ 
+.container{
+    height: 100vh;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card1 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url("./images/img1.webp");
+    background-size: cover;
+    cursor: pointer;
+    
+}
+
+.card1:hover {
+    background-image: url("./images/img2.jpg");
+    scale: calc(1.1);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 10);
+}
+
+.card2 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url("./images/img4.jpg");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card2:hover {
+    background-image: url("./images/img3.webp");
+    scale: calc(1.1);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 10);
+
+}
+
+.card3 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url("./images/img1.webp");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card3:hover {
+    background-image: url("./images/img2.jpg");
+    scale: calc(1.1);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 10);
+}
+
+.card4 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url("./images/img4.jpg");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card4:hover {
+    background-image: url("./images/img3.webp");
+    scale: calc(1.1);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 10);
+}
